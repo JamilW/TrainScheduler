@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+
+<!--jQuery link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
+
+<!--CSS links-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<!--Google Fonts-->    
+<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron"><h1>This Train Is ALWAYS On Time!!</h1></div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron">
+            <div class="table-responsive">
+                <table class="table">
+                    <h2 id="train-header">Current Train Schedule</h2>
+                        <thead>
+                            <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                            <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                            <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>    
+        </div>
+    </div>
+
+    <div class="container">
+            <div class="jumbotron">
+                <h2 id >Add A Train</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputTrain1">Train Name</label>
+                        <input type="train" class="form-control" id="exampleInputTrain1" aria-describedby="trainHelp" placeholder="Enter train">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCity1">Destination</label>
+                        <input type="city" class="form-control" id="exampleInputCity1" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputTime1">First Train Time (HH:mm - military time)</label>
+                        <input type="time" class="form-control" id="exampleInputTime1" placeholder="Time">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFrequency1">Frequency (min)</label>
+                        <input type="frequency" class="form-control" id="exampleInputFrequency1" placeholder="Frequency">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+            </div>
+        </div>
+
+</body>
+
+</html>

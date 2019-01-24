@@ -1,0 +1,36 @@
+/* Property for border and padding */
+* {
+    box-sizing: border-box;
+}
+/* Body styling*/
+body    {
+    background: url(../images/prism.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Header */
+.jumbotron  {
+    margin-top: 2vh;
+    text-align: center;
+    background: rgb(50, 169, 253);
+    color: white;
+    border: white ridge 1vw;
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: bold;
+}    
+/* Train Schedule Table */
+.table  {
+    font-family: 'Sarabun', sans-serif;
+    margin-top: 2vh;
+    text-align: center;
+    background: rgb(50, 169, 253);
+    color: white;
+    border: white ridge 1vw;
+    overflow-y: hidden;
+}
+/* Train Heading */
+#train-heading  {
+    margin-top: 0vh;
+    padding-bottom: 2vh;
+    font-family: 'Sarabun', sans-serif;
+}
