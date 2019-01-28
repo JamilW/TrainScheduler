@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 /* Body styling*/
+html    {
+    position: relative;
+}
+/* Body styling*/
 body    {
     background: url(../images/prism.png);
     background-repeat: no-repeat;

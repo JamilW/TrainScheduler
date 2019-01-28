@@ -7,25 +7,29 @@
     <meta charset="UTF-8">
     <title>Train Scheduler</title>
 
+<!--Firebase link-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
 <!--jQuery link-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+<!--Moment.js link-->
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>   
 
 <!--CSS links-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
 <!--Google Fonts-->    
-<link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
 
 </head>
 
 <body>
-
+<!--Heading-->
     <div class="container">
         <div class="jumbotron"><h1>This Train Is ALWAYS On Time!!</h1></div>
     </div>
-
+<!--Train Info Displayed In Table-->
     <div class="container">
         <div class="jumbotron">
             <div class="table-responsive">
@@ -42,11 +46,11 @@
                         </thead>
                         <tbody>
                             <tr>
-                            <th scope="row"></th>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <th scope="row" id="train-name"></th>
+                            <td id="train-city"></td>
+                            <td id="frequency"></td>
+                            <td id="next-arrival"></td>
+                            <td id="minutes-away"></td>
                             </tr>
                             <tr>
                             <th scope="row"></th>
@@ -67,15 +71,14 @@
             </div>    
         </div>
     </div>
-
+<!--Form for user to submit-->
     <div class="container">
             <div class="jumbotron">
                 <h2 id >Add A Train</h2>
                 <form>
                     <div class="form-group">
                         <label for="exampleInputTrain1">Train Name</label>
-                        <input type="train" class="form-control" id="exampleInputTrain1" aria-describedby="trainHelp" placeholder="Enter train">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input type="train" class="form-control" id="exampleInputTrain1" placeholder="Enter train">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputCity1">Destination</label>
@@ -89,10 +92,13 @@
                         <label for="exampleInputFrequency1">Frequency (min)</label>
                         <input type="frequency" class="form-control" id="exampleInputFrequency1" placeholder="Frequency">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+                    <button type="submit" class="submit-form">Submit</button>
+                </form>
             </div>
         </div>
+ 
+<!--Javascript link-->
+<script src="assets/javascript/Moment.js"></script>        
 
 </body>
 
