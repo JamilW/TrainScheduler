@@ -56,7 +56,7 @@ $(".submit-form").on("click", function(event)    {
 
 // Variables to calculate next arrival in military time and how many minutes away
         var nextArrivalPretty = moment.unix(firstTrain).format("HH:mm a");
-        var minutesAway = moment().diff(moment(firstTrain, "X"), "minutes");
+        var minutesAway = moment(nextArrivalPretty).diff(moment(firstTrain, "X"), "minutes");
         var nextArrival = minutesAway - frequency;
         nextArrival = moment().format("HH:mm a");
 
