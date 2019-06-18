@@ -2,10 +2,12 @@
 * {
     box-sizing: border-box;
 }
+
 /* Body styling*/
 html    {
     position: relative;
 }
+
 /* Form styling */
 .form-group {
     font-family: 'Fahkwang', sans-serif;
@@ -50,12 +52,17 @@ th  {
 .jumbotron  {
     margin-top: 2vh;
     text-align: center;
-    background: rgb(50, 169, 253);
+    background: url(../images/Webp.net-resizeimage.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    height: 100%; */
+    /* background: rgb(50, 169, 253); */
     color: white;
     border: white ridge 2px;
     font-family: 'Fahkwang', sans-serif;
     font-weight: bold;
 }    
+
 /* Train Schedule Table */
 #train-table  {
     font-family: 'Sarabun', sans-serif;
@@ -66,6 +73,7 @@ th  {
     border: white ridge 2px;
     overflow-y: hidden;
 }
+
 /* Train Heading */
 #train-heading  {
     margin-top: 0vh;
