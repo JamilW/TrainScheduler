@@ -6,30 +6,64 @@
 html    {
     position: relative;
 }
+/* Form styling */
+.form-group {
+    font-family: 'Fahkwang', sans-serif;
+    background: rgb(50, 169, 253);
+    color: white;
+    border: white ridge 2px;
+}
+
 /* Body styling*/
 body    {
     background: url(../images/prism.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Table heading */
+th  {
+    font-family: 'Fahkwang', sans-serif;
+}
+
+/* Button */
+.btn    {
+    border: white ridge 2px;
+    background: rgb(50, 169, 253);
+    font-family: 'Fahkwang', sans-serif;
+}
+
+/* Card body */
+.card-body  {
+    background: rgb(51, 50, 50);
+}
+
+/* Card header */
+.card-header    {
+    font-family: 'Fahkwang', sans-serif;
+    background: rgb(50, 169, 253);
+    color: white;
+    border: white ridge 2px;
+}
+
 /* Header */
 .jumbotron  {
     margin-top: 2vh;
     text-align: center;
     background: rgb(50, 169, 253);
     color: white;
-    border: white ridge 1vw;
+    border: white ridge 2px;
     font-family: 'Fahkwang', sans-serif;
     font-weight: bold;
 }    
 /* Train Schedule Table */
-.table  {
+#train-table  {
     font-family: 'Sarabun', sans-serif;
     margin-top: 2vh;
     text-align: center;
     background: rgb(50, 169, 253);
     color: white;
-    border: white ridge 1vw;
+    border: white ridge 2px;
     overflow-y: hidden;
 }
 /* Train Heading */
